@@ -14,7 +14,7 @@
   become: true
   become_user: root
   package:
-    name: |
+    name: |-
       {{- gcc_toolbox_cc_os_pkgs
           + gcc_toolbox_addl_os_pkgs
           + gcc_toolbox_make_os_pkgs -}}
